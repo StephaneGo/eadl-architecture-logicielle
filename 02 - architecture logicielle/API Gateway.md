@@ -9,9 +9,14 @@ Tags:
 # Notes
 
 
-## quels sont les avantage de l'architecture API Gateway
+Pattern utilisé dans les applications microservices modernes qui définit un point d'entrée unique au backend depuis les différents frontends.
 
-L'architecture API Gateway centralise l'accès aux services backend via un point d'entrée unique.
+1. Gestion de la sécurité centralisée
+2. Gestion du trafic optimisée ( routage avec équilibrage de charge, limitation de débit)
+3. Aggrégation des réponses : le client fait une seule requête, l'api gateway gère les requêtes internes et fait une seule réponse
+4. L'api gateway fait office de facade masquant la compléxité et l'emplacement réel des traitements
+
+Inconvénient : peut générer de l'over fetching ou de l'under fetching (problème de chatty client)
 
 ### Avantage 1 : Sécurité centralisée
 
